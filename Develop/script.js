@@ -46,4 +46,9 @@ if (starterQuestion) {
   confirm("Let's set up your password criteria.");
   return;
 }
+var containsCap = confirm("Would you like to use capital letters?");
+var containsLow = confirm("Would you like to use lower case letters?");
+var containsNum = confirm("Would you like to use numbers in your password?");
+var containsSC = confirm("Would you like to use special characters in your password?");
+
 }
