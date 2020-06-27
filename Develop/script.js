@@ -38,7 +38,7 @@ function generatePassword() {
   var containsSC = confirm("Would you like to use special characters in your password?");
   //based on user choices, if confirmed each array will push to the myWorkingArray to use for random sample.
   if (containsCap) {
-    // myWorkingArray = {...upperCase, ...myWorkingArray};
+    // myWorkingArray = {upperCase, lowerCase, numbers, specialCharacters};
     Array.prototype.push.apply(myWorkingArray, upperCase);
 
   }
