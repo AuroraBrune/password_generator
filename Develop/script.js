@@ -38,21 +38,20 @@ function generatePassword() {
   var containsSC = confirm("Would you like to use special characters in your password?");
   //based on user choices, if confirmed each array will push to the myWorkingArray to use for random sample.
   if (containsCap) {
-    // myWorkingArray = {...upperCase, ...myWorkingArray};
+    // myWorkingArray = {upperCase, lowerCase, numbers, specialCharacters};
     Array.prototype.push.apply(myWorkingArray, upperCase);
-    console.log(myWorkingArray);
+
   }
   if (containsLow) {
     Array.prototype.push.apply(myWorkingArray, lowerCase);
-    console.log(myWorkingArray);
+
   }
   if (containsNum) {
     Array.prototype.push.apply(myWorkingArray, numbers);
-    console.log(myWorkingArray);
+
   }
   if (containsSC) {
     Array.prototype.push.apply(myWorkingArray, spCha);
-    console.log(myWorkingArray);
 
 
   }
@@ -71,7 +70,7 @@ function randomizer(min, max) {
   //expectation is r will = num between min and max numbers passed in,
   //Math.round will convert that to a whole number
   var r = Math.random() * (max - min) - 1;
-  return Math.round(r); 
+  return Math.round(r);
 }
 
 
