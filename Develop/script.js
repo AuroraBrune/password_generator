@@ -40,19 +40,18 @@ function generatePassword() {
   if (containsCap) {
     // myWorkingArray = {...upperCase, ...myWorkingArray};
     Array.prototype.push.apply(myWorkingArray, upperCase);
-    console.log(myWorkingArray);
+
   }
   if (containsLow) {
     Array.prototype.push.apply(myWorkingArray, lowerCase);
-    console.log(myWorkingArray);
+
   }
   if (containsNum) {
     Array.prototype.push.apply(myWorkingArray, numbers);
-    console.log(myWorkingArray);
+
   }
   if (containsSC) {
     Array.prototype.push.apply(myWorkingArray, spCha);
-    console.log(myWorkingArray);
 
 
   }
@@ -71,7 +70,7 @@ function randomizer(min, max) {
   //expectation is r will = num between min and max numbers passed in,
   //Math.round will convert that to a whole number
   var r = Math.random() * (max - min) - 1;
-  return Math.round(r); 
+  return Math.round(r);
 }
 
 
